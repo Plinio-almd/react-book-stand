@@ -1,0 +1,32 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "As crônicas de Nárnia",
+      "qt": 1,
+      "author": "C.S. Lewis",
+      "info": "Livro sem capa"
+    },
+    {
+      "id": "2",
+      "title": "O Senhor dos Anéis",
+      "qt": 1,
+      "author": "J. Tolkien",
+      "info": ""
+    },
+    {
+      "id": "3",
+      "title": "Admirável Mundo Novo",
+      "qt": 1,
+      "author": "A. Huxley",
+      "info": "Novo"
+    },
+    {
+      "id": "4",
+      "title": "A Nascente",
+      "qt": 1,
+      "author": "A. Rand",
+      "info": "13ª Edição"
+    }
+  ]
+}
