@@ -1,10 +1,15 @@
 import { useState } from "react"
+import { Link, useNavigate } from "react-router-dom" 
 import BackBtn from "../assets/back-btn.svg"
 import ImgBtn from "../components/ImgBtn"
+import useStore from "../stores/store"
 
 const AuthPage = () => {
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
+  const someData = useStore(state => state.user)
+
+  const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -20,7 +25,7 @@ const AuthPage = () => {
       <header>
         <ImgBtn
           src={BackBtn}
-          href="/login"
+          href="/"
         />
         <h5>Acesso exclusivo para trabalhadores</h5>
       </header>
