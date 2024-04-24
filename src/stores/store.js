@@ -1,9 +1,10 @@
 import {create} from 'zustand'
 import data from "../../data.json"
+import axios from 'axios'
 
-const fromJson = data.books
+// const fromJson = data.books
 const useStore = create((set, get) => ({
-  books: fromJson,
+  books: [],
   user: null,
   isLoading: false,
   isAuthenticated: false,
@@ -15,7 +16,7 @@ const useStore = create((set, get) => ({
       if (!res.ok) {
         throw new Error('Failed to fetch books')
       }
-      const books = await res.json
+      const books = await res.json()
       set(state => ({books: books, isLoading: false}))
     } catch(error) {
       console.log(error);
