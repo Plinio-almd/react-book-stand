@@ -1,41 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
+  --spring-green: #08a559;
+  --ultra-violet: #52489c;
+  --snow: #fcf7f8;
+  --french-gray: #ced3dc;
+  --light-sky-blue: #90c2e7;
+
   line-height: 1.5;
   font-weight: 400;
-
-  --spring-green: #08a559;
-  --ultra-violet: #52489cff;
-  --snow: #fcf7f8ff;
-  --french-gray: #ced3dcff;
-  --light-sky-blue: #90c2e7ff;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Nunito, sans-serif;
   line-height: 1.5;
   background: var(--snow);
 }
+
 main {
-  display: flex;
-  place-content: center;
-  flex-direction: column;
-  max-width: 900px;
-  margin: 2rem auto;
+  padding: 1rem 0.25rem;
 }
+
 a {
   text-decoration: none;
   color: var(--snow);
 }
+
 nav {
   padding: 1.25rem 2rem;
   background-color: var(--ultra-violet);
@@ -53,47 +53,61 @@ nav h1, footer, .nav-link {
 .nav-link {
   border: 1px solid var(--snow);
   border-radius: 4px;
-  padding: .25rem;
+  padding: 0.25rem;
   letter-spacing: 1px;
-  transition: .5s;
+  transition: 0.5s;
 }
+
 .nav-link:hover {
   background: var(--snow);
   color: var(--ultra-violet);
-  transition: .5s;
-  padding: .25rem;
 }
+
 input {
   border-radius: 8px;
   padding: 0.25rem;
   font-size: 1.5rem;
   border: 2px solid var(--french-gray);
   margin-bottom: 30px;
+  width: 100%;
 }
+
 input::placeholder {
   color: var(--french-gray);
 }
+
+.library-container {
+  max-width: 900px;
+  margin: auto;
+}
+
 table {
   background: white;
   border-radius: 12px;
   padding: 0.75rem;
+  width: 100%;
 }
+
 th {
   text-align: left;
   border-bottom: 2px ridge var(--french-gray);
   padding: 5px 8px;
   text-transform: uppercase;
 }
+
 td {
   padding: 3px 8px;
 }
+
 tr:nth-of-type(2n) {
   background: var(--snow);
 }
-td:nth-of-type(4), td:nth-of-type(1){
+
+td:nth-of-type(4), td:nth-of-type(1) {
   text-align: center;
 }
-footer{
+
+footer {
   position: fixed;
   bottom: 0;
   background: var(--ultra-violet);
@@ -103,8 +117,9 @@ footer{
   font-weight: 700;
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
+
 footer > span {
   position: fixed;
   right: 10px;
@@ -113,66 +128,87 @@ footer > span {
 .svg-btn {
   height: 1.5rem;
 }
-.auth-container{
-  margin: 0 auto;
+
+.auth-container {
+  max-width: 400px;
+  margin: auto;
 }
+
 .auth-container .svg-btn {
   height: 2rem;
 }
+
 .auth-container h5 {
   color: var(--french-gray);
   margin-top: 2rem;
 }
+
 .form-container {
   display: flex;
   flex-direction: column;
   background: white;
   border-radius: 8px;
-  padding: 32px 12px;
-  margin-top: 1rem;
+  padding: 2rem 0.75rem;
+  margin-top: 0.5rem;
 }
+
 .login-btn {
   max-width: fit-content;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   border-radius: 8px;
   color: var(--ultra-violet);
   background: var(--french-gray);
   border: 2px solid var(--ultra-violet);
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
   font-weight: 600;
   text-transform: uppercase;
 }
+
 .login-btn:hover {
-  border-radius: 1rem;
-  color: var(--spring-green);
-  background: var(--snow);
-  border: 2px solid var(--spring-green);
+  color: var(--snow);
+  background: var(--ultra-violet);
+  border: 2px solid transparent;
 }
 
 .nf-container {
+  max-width: 900px;
   background: white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  text-align: center;
   align-items: center;
   gap: 2rem;
   padding: 5rem 1rem;
+  margin: auto;
   border-radius: 8px;
 }
+
 .nf-container a {
   color: var(--french-gray);
   border: 1px solid var(--french-gray);
   border-radius: 8px;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   cursor: pointer;
 }
+
 .nf-container a:hover {
   background: var(--french-gray);
   color: white;
   border: 1px solid white;
-  border-radius: 8px;
-  padding: .5rem 1.5rem;
-  cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+  table th:nth-child(1),
+  table td:nth-child(1) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  table th:nth-child(5),
+  table td:nth-child(5) {
+    display: none;
+  }
+}

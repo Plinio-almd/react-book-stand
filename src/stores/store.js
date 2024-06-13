@@ -1,6 +1,4 @@
 import {create} from 'zustand'
-import data from "../../data.json"
-import axios from 'axios'
 
 // const fromJson = data.books
 const useStore = create((set, get) => ({

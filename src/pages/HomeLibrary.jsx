@@ -20,8 +20,10 @@ const HomeLibrary = () => {
   })
   return (
     <SearchContext.Provider value={{ searchTerm, setSearchTerm }}>
-      <InputSearch />
-      <TableOfBooks filteredBooks={filteredBooks} />
+      <div className="library-container">
+        <InputSearch />
+        <TableOfBooks filteredBooks={filteredBooks} />
+      </div>
     </SearchContext.Provider>
   )
 }

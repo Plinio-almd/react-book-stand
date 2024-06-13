@@ -1,13 +1,13 @@
-
 import Book from "./Book"
-const TableOfBooks = ({filteredBooks}) => {  return (
+const TableOfBooks = ({ filteredBooks }) => {
+  return (
     <table>
       <thead>
         <tr>
           <th>#</th>
           <th>Título</th>
           <th>Autor</th>
-          <th>Quantidade</th>
+          <th>QTD</th>
           <th>Informações Adicionais</th>
         </tr>
       </thead>
