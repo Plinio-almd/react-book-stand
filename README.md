@@ -1,13 +1,9 @@
 # React Book Stand
 
-React Book Stand is a simple web application built with React.js that allows users to browse a collection of books. Users can view details about each book, such as the title, author, and description. They can also add books to their reading list and mark books as read.
+React Book Stand is a simple web application built with React.js that allows users to browse a collection of books. Users can view details about each book, such as the title, author, quantity of each book available, and description.
+I started building it to keep practicing, to try different libraries and learn to make my own stuff.
+There is the backend for this app that I'm still working on. Soon I will implement the user authentication, the API to fetch books and CRUD data in a MySql DB.
 
-## Features
-
-- Browse a collection of books
-- View details about each book
-- Add books to a reading list(coming soon)
-- Mark books as read(coming soon)
 ## Installation
 
 To run React Book Stand locally, follow these steps:
@@ -33,21 +29,10 @@ npm install
 4. Start the development server:
 
 ```bash
-npm start
+npm run dev
 ```
 
-5. Open your browser and visit `http://localhost:3000` to view the application.
-
-## Usage
-
-Once the application is running, you can:
-
-- Browse the collection of books by scrolling through the page.
-- Search for book by title and/or author
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+5. Open your browser and visit `http://localhost:5173/` to view the application.
 
 ## Contact
 
